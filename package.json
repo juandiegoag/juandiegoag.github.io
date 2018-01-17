@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Interactive CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w ./sass/*.scss ./main.css && postcss *.css --use autoprefixer -o main.css",
+    "uglify": "uglify-js "
+  },
+  "keywords": [
+    "cv",
+    "css"
+  ],
+  "author": "Juan Diego Araya",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.1",
+    "uglify-js": "^3.3.7"
+  }
+}
