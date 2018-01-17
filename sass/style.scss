@@ -50,7 +50,7 @@ body {
 }
 
 .about--text{
-    text-align:left;
+    text-align:justify;
 }
 
 .row--height {
@@ -392,4 +392,13 @@ body {
         border-left: 0.4rem #aa1111 solid;
         padding-left: 2rem;
     }
+}
+.reveal{}
+
+.display--inline{
+    display:inline-block;
+}
+
+.icon--white{
+    color:white;
 }

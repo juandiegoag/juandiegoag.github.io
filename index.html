@@ -9,22 +9,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <script src="js/scrollify.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 </head>
 
-<body>
+<body> 
   <div class="container-fluid banner">
 
     <section data-section-name="main" class="sec">
       <div class="row row--height sec-row">
-        <div class="col-12 sec-row">
+        <div class="col-12 sec-row reveal">
           <div class="main-info ">
             <h1>Juan Diego Araya</h1>
             <hr>
@@ -38,24 +38,22 @@
 
     <section data-section-name="about" class="sec">
       <div class="row row--height">
-        <div class="col-6 left-half half--white ">
+        <div class="col-6 left-half half--white">
+          <div class="reveal">
           <h2>Get to know me!</h2>
-          <h3>Born and raised as a child of the rainforest.</h3>
           <div class="about--text">
             <p>I am a 22 year old Computer Science graduate from the University of Costa Rica, passionate about new challenges, technologies
-              and opportunities. </p>
+              and opportunities. I am a huge food, sports and nutrition enthusiast, and a saxophone player.
+            </p>
               <p>
                 Over the last four years I have dedicated a big part of my time to learn about Computer Science
-                and all the awesome things it has to offer. 
-              </p>
-              <p>
-                Being like that, I have experimented with: software development, networking, data processing, and cybersecurity. 
-              </p>
-              <p>
-                Most of my work has been involved with development of desktop applications and object oriented programming, although
-                I have worked with functional programming as well. 
+                and all the awesome things it has to offer. Most of my work has been involved around applying and understanding the fundamentals
+                of Computer Science. I've worked projects, most of them
+                evaluating general and specific Computer Science basics, such as data structures, software design, artificial intelligence,
+                project and and client management, agile methodologies (mostly SCRUM), software testing, etc.
               </p>
             </div>
+          </div>
           <nav class="main-nav">
             <ul>
               <li class="nav-list__style">
@@ -78,6 +76,7 @@
               </li>
             </ul>
           </nav>
+        
         </div>
         <div class="col-6 right-half right-half__about">
           <div class="overlay"></div>
@@ -89,6 +88,7 @@
     <section data-section-name="education" class="sec">
       <div class="row row--height sec-row sec-row--style">
         <div class="col-12">
+          <div class="reveal">
           <h1 class="section-title--style">Where did I study?</h1>
           <div class="timeline">
             <div class="container left">
@@ -106,6 +106,7 @@
                 <h4 class="timeline__info--text">Immersive bootcamp</h4>
               </div>
             </div>
+          </div>
           </div>
           <nav class="main-nav row-nav--style">
             <ul class="row-nav--style">
@@ -137,10 +138,9 @@
         <div class="col-6 left-half left-half__experience ">
           <div class="overlay"></div>
           <h1 class="overlay--text">What have I done?</h1>
-
         </div>
         <div class="col-6 right-half half--white">
-          <ul class="data-timeline">
+          <ul class="data-timeline reveal">
             <li>
               <p class="data-timeline-date">2016</p>
               <div class="data-timeline-content">
@@ -188,7 +188,7 @@
 
     <section data-section-name="skills" class="sec">
       <div class="row row--height sec-row sec-row--style">
-        <div class="skills">
+        <div class="skills reveal">
           <h1 class="section-title--style">What have I worked with?</h1>
           <div class="row skills__row">
             <div class="row skills__subrow">
@@ -245,7 +245,7 @@
     <section data-section-name="projects" class="sec">
       <div class="row row--height">
         <div class="col-6 left-half half--white">
-          <ul class="data-timeline">
+          <ul class="data-timeline reveal">
             <li>
               <p class="data-timeline-date">2017</p>
               <div class="data-timeline-content">
@@ -256,7 +256,7 @@
             <li>
               <p class="data-timeline-date">2016</p>
               <div class="data-timeline-content">
-                <h3>Heuristic Tetris Player</h3>
+                <h3>Heuristic Tetris Player</h3>              
                 <p>
                   Python group project focused on designing and implementing an heuristic Tetris player aimed to auto-improve it’s own performance
                   using genetic algorithms.
@@ -316,10 +316,10 @@
 
     <section data-section-name="languages" class="sec">
       <div class="row row--height sec-row sec-row--style">
-        <div class="col-12">
+        <div class="col-12 reveal">
           <h1 class="section-title--style">What can I speak?</h1>
         </div>
-        <div class="row row--center row__language--white">
+        <div class="row row--center row__language--white reveal">
           <div class="col-4">
             <span class="skills__skill language language--es"></span>
             <h2>Native</h2>
@@ -332,7 +332,7 @@
             <span class="skills__skill language language--de"></span>
             <h2>A1c Zertifikat</h2>
           </div>
-        </div>
+        </div>            
         <nav class="main-nav row-nav--style">
           <ul class="row-nav--style">
             <li class="nav-list__style">

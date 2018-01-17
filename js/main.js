@@ -12,7 +12,7 @@
 //         });
 // }
 
-$(function() {
+  $(function() {
     $.scrollify({
       section : ".sec",
       scrollbars : true,
@@ -23,3 +23,9 @@ $(function() {
   function move(section){
     $.scrollify.move(section);
   }
+
+  jQuery(document).ready(function($){
+    window.sr = ScrollReveal({reset:true});
+    sr.reveal('.reveal');
+    // sr.reveal('.bar');
+  });
