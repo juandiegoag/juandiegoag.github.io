@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <title>What is this?</title>
+</head>
+    <link rel="stylesheet" href="/style/main.css">
+    <body>
+        <div class="container">
+            <div class="row nav">
+    <div class="col-md-2 bg-faded">
+        <a href="/index.html">
+            <h2 class="brand">DUNN</h2>
+        </a>
+    </div>
+    <div class="row banner"></div>
+</div>
+                <div class="row content">
+                    <div class="col-md-3 post__info">
+                        <h1 style="text-align:center">What is this?</h1>
+                        <h3 style="text-align:center">by Juan Diego A.</h3>
+                        <h5 style="text-align:center; font-style:italic">March 1, 2018</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 id="dunnthessg">Dunn the SSG</h2>
+<p>As the name suggests, Dunn is a tool to create static sites with minimum effort. 
+In order to use it, you should first check if you have node and npm installed on your device. </p>
+<p>To start creating amazing sites run:</p>
+<pre><code>npx dunn-create-project
+</code></pre>
+<p>And follow through with the wizard. After running the program, you'll end up with a file structure just like this one:</p>
+<h3 id="filestructure">File structure</h3>
+<p>It's important to know what does each folder and file represents:</p>
+<ol>
+<li><p><strong>Styles</strong>: Here you can add your style scripts. Currently the app supports:</p>
+<ul>
+<li>css</li>
+<li>sass</li></ul></li>
+<li><p><strong>Templates</strong>: Here you have your project templates. Additionally, you can add partials into subfolders and call them if your templating engine supports it.</p></li>
+<li><p><strong>Content</strong>: Here you add your content. Each page you want to publish or try needs to be on a subfolder within this directory. Each subfolder should then have it's markdown file with what do you want to be injected in your page.</p></li>
+<li><p><strong>Lib</strong>: App scripts. Must certainly <strong>not</strong> recommend to alter any file in here. Whatever. Is up to you. I did warn you though. </p></li>
+<li><p><strong>Index.html</strong>: In this case, the app's entry point.</p></li>
+<li><p><strong>Dunn.config.json</strong>: Project's general config file, things as the entry point are defined here. Do <strong>not</strong> erase. Just <strong>don't</strong>.</p></li>
+<li><p><strong>Plugins</strong>: Fun part. Plain JS scripts with amazing functionalities. Further explanation of this on the next sections. </p></li>
+</ol>
+<h3 id="continuinginstallation">Continuing installation</h3>
+<p>After having the file structure created, run the following commands:</p>
+<pre><code>npm i
+</code></pre>
+<p>to install all the project's dependencies. And then: </p>
+<pre><code>npm link
+</code></pre>
+<p>to make our project accesible with only the <code>dunn</code> command.</p>
+<h3 id="basicusage">Basic usage</h3>
+<ol>
+<li><p><code>dunn -p</code>: Raises a mock server for you to navigate your website.</p></li>
+<li><p><code>dunn -b</code>: Builds your project into the /build directory.</p></li>
+<li><p><code>dunn -h</code>: Plz hlp.</p></li>
+</ol>
+<!-- 
+![example image](../../style/example-image.jpg "An exemplary image") -->
+                    </div>
+                </div>
+                <footer class="row footer">
+    <div class="col-md-2 bg-faded">
+        <span class="brand"></span>
+    </div>
+</footer>
+        </div>
+        <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+    </body>
+
+</html>

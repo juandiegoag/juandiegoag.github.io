@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Granular?</title>
+</head>
+    
+<body>
+    <div class="container">
+        <div class="row nav">
+            <div class="col-md-2 bg-faded">
+                <a href="/index.html">
+                    <h2 class="brand">DUNN</h2>
+                </a>
+            </div>
+            <div class="row banner"></div>
+        </div>
+        <div class="row content">
+            <div class="col-md-3 post__info">
+                <h1 style="text-align:center">Granular?</h1>
+                <h3 style="text-align:center">by Juan Diego A.</h3>
+                <h5 style="text-align:center; font-style:italic">March 1, 2018</h5>
+            </div>
+            <div class="col-md-9">
+                <h2 id="the-cool-part">The cool part</h2>
+<p>Dunn is an SSG based on EJS (Embedded JS) and Markdown, meaning that most views use a default Markdown-EJS layout. Although it doesn&#39;t really end there. When the project was created, there was a magic directory called plugins. In this directory the user can input any parser to any markdown (being: markdown, kramdown, etc.) or templating engine (being: liquid, pug, jade, handlebars, etc. ) they like. Whatever happens is up to you.</p>
+<h3 id="ain-t-this-cool">Ain&#39;t this cool?</h3>
+<p>Dunn comes with two markdown parsers (markdown, kramdown), and two template compilers (ejs, handlebars), you can combine them in whatever way you like (Actually, this view is compiled with a kramdown-handlebars combination, yes, that hipster). </p>
+<p>Maybe you are just not satisfied with this kind of flexibility, well, fear no more, it gets better. </p>
+<h3 id="next-level">Next level</h3>
+<p>You are absolutely free to write your own parser and templating engine compiler. <strong>Are you insane?!</strong> Actually, no. Just follow these steps:</p>
+<ol>
+<li><p>Create your <strong>.js</strong> file with the name you like and add it to the plugins directory. </p>
+</li>
+<li><p>Use the CommonJS syntax <code>module.exports.callback</code> to export your parser or compiler. Depending on the function the parameters will be different though.</p>
+</li>
+<li><p>Add your custom parser or compiler on your front matter. </p>
+</li>
+</ol>
+<h3 id="what-else">What else?</h3>
+<p>This custom parser-compiler behavior is not limited to markdown and templates. It also works with styles. Just a little different. </p>
+<p>Currently, Dunn supports sass and css, although this is only because those are implemented by now. Style plugins work just as content plugins, but with a little tweak. When applying style plugins, Dunn reads the plugin array from left to right, appending the plugin results to the next one until reading the whole plugin array. Making possible to combine a sass processor with an uglify module, then again, is up to you. If you want to write your own style processor and apply it to the files, you are more than welcome to, although that seems rather odd and awfully complicated, but, what the app cares about is that you <strong>can</strong> do it. </p>
+
+            </div>
+        </div>
+        <footer class="row footer">
+            <div class="col-md-2 bg-faded">
+                <span class="brand"></span>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+            ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>

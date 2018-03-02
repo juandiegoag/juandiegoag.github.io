@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <title>Can it go any further?</title>
+</head>
+    <link rel="stylesheet" href="/style/main.css">
+    <body>
+        <div class="container">
+            <div class="row nav">
+    <div class="col-md-2 bg-faded">
+        <a href="/index.html">
+            <h2 class="brand">DUNN</h2>
+        </a>
+    </div>
+    <div class="row banner"></div>
+</div>
+                <div class="row content">
+                    <div class="col-md-3 post__info">
+                        <h1 style="text-align:center">Can it go any further?</h1>
+                        <h3 style="text-align:center">by Juanqui Loco.</h3>
+                        <h5 style="text-align:center; font-style:italic">March 2, 2018</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 id="furthersteps">Further steps</h2>
+<p>Since we are following a highly modular approach. It can.</p>
+<p>Dunn lets you deploy your work to any platform you like. When you call the <code>dunn -d</code> option or <code>dunn --deploy</code>, the program will look for the <code>dunn.config.js</code> file and get the plugins specified under the <code>deploy</code> attribute. Dunn will iterate over the array and apply each of the plugins to the build directory (in case you wanted to do multiple deploys in one line, the program doesn't care, is all up to you!). </p>
+<h3 id="deploypluginsandcallbacks">Deploy plugins and callbacks</h3>
+<p>A deploy plugin will follow the following pattern:</p>
+<pre><code>define foobar(opts) {
+    //do your work..
+}
+</code></pre>
+<p>Although it seems pretty straight forward, there are certain rules for writing your own deploy plugins:</p>
+<ol>
+<li><p>Make sure to export the callback function using the CommonJS syntax <code>module.exports.callback</code>.</p></li>
+<li><p>The <code>opts</code> parameter is an object that you created, so you can use it as you wish. </p></li>
+<li><p>When calling the opts object inside your callback, make sure to be using the same names as the ones in the 'plugin-opts' attribute in the deploy plugins array.</p></li>
+<li><p>As usual, save your custom plugin on the /plugins directory.</p></li>
+</ol>
+<p>That's pretty much it, go crazy! Also, here is a dog:</p>
+<!-- 
+![much importamt](../../images/dog.jpg "Very mucho important") -->
+                    </div>
+                </div>
+                <footer class="row footer">
+    <div class="col-md-2 bg-faded">
+        <span class="brand"></span>
+    </div>
+</footer>
+        </div>
+        <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+    </body>
+
+</html>
