@@ -1,25 +1,19 @@
 {
-  "name": "cv",
+  "name": "RI-v2",
   "version": "1.0.0",
-  "description": "Interactive CV",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w ./sass/*.scss ./main.css && postcss *.css --use autoprefixer -o main.css",
-    "uglify": "uglify-js "
+    "compile-sass": "node-sass -w styles/scss/main.scss styles/main.css --output-style compressed",
+    "sass": "node-sass -w ./styles/scss/main.scss --include-path ./styles/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/ -o ./dist/styles/ --output-style compressed"
+
   },
-  "keywords": [
-    "cv",
-    "css"
-  ],
-  "author": "Juan Diego Araya",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^7.2.4",
-    "concat": "^1.0.3",
-    "jquery": "^3.2.1",
-    "node-sass": "^4.7.2",
-    "postcss-cli": "^4.1.1",
-    "uglify-js": "^3.3.7"
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "node-sass": "^4.10.0"
   }
 }

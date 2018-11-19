@@ -1,0 +1,28 @@
+$font-size-md: 0.9375rem; // 15px
+$font-size-default: 1rem; //16px
+$font-size-xl: 2.5rem; // 40px
+
+
+$default-gutter: 1.25rem; // 20px
+
+$gutter-xxs: $default-gutter / 4; // 5px
+$gutter-xs: $default-gutter / 2; // 10px
+$gutter-sm: $default-gutter / 1.33333333; // 15px
+$gutter-md: $default-gutter * 1.25; // 25px
+$gutter-lg: $default-gutter * 2; // 40px
+$gutter-xlg: $gutter-lg + $gutter-sm; // 55px; 
+$gutter-xl: $default-gutter * 3.5; // 70px
+ 
+$line-height-1: 1;
+$line-height-2: 1.25;
+$line-height-3: 1.5;
+$line-height-default: 1.2;
+
+// Breakpoints:
+$breakpoints: (
+  mobile: 767px,
+  tablet: 768px,
+  desktop: 992px,
+  large-desktop: 1800px,
+  extra-large-desktop: 2500px
+);

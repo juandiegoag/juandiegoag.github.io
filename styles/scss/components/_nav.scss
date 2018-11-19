@@ -1,0 +1,78 @@
+.sri-nav {
+    background-color: $white;
+
+    &__list-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $default-gutter 0;
+        border-bottom: 1px solid $light-gray-1;
+        margin: 0 4%;
+    }
+
+    &__menu-container {
+        text-align: center;
+        padding: $gutter-md;
+    }
+    
+    &__menu-option-container {
+        margin-bottom: $default-gutter;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__menu-option {
+        font-size: $font-size-md;
+        letter-spacing: 2.82px;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+        &--selected {
+            color: $main-beige;
+        }
+    }
+
+    &__logo {
+        visibility: hidden;
+        position: absolute;
+        &--selected {
+            visibility: visible;
+            position: relative;
+        }
+    }
+}
+
+
+@include bp(desktop) {
+    .sri-nav {
+        &__logo {
+            display: inline-flex;
+            margin-right: 128px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__menu-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__menu-option-container {
+            margin: 0;
+            margin-right: $gutter-xl;
+            display: initial;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__logo {
+            position: relative;
+            visibility: visible;
+        }
+        
+    }
+}
