@@ -23,7 +23,7 @@ class Router {
 
         if (routeToResolve) {
             if (event && event.oldURL) {
-                const oldRouteName = event.oldURL.split('#')[1];
+                const oldRouteName = event.oldURL.split('#')[1] || this.routes.find(e => e.isDefault).name;
                 const oldRouteNode = this.routes.find(e => e.name === oldRouteName);
                 oldRouteNode && oldRouteNode.toggleSelected(false);
             }
